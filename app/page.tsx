@@ -500,7 +500,7 @@ export default function HomePage() {
                 description:
                   "Attend workshops, seminars, and guest lectures from local government professionals to enhance your skills and knowledge.",
                 icon: GraduationCap,
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/assets/prof_dev_about_chapter.jpg?height=200&width=400",
                 color: "bg-blue-500",
               },
               {
@@ -508,7 +508,7 @@ export default function HomePage() {
                 description:
                   "Connect with fellow students, alumni, and professionals in the field through our regular events and activities.",
                 icon: Users,
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/assets/net_opr_about_chapter.jpg?height=200&width=400",
                 color: "bg-green-500",
               },
               {
@@ -516,7 +516,7 @@ export default function HomePage() {
                 description:
                   "Participate in local government meetings, volunteer for community projects, and make a real impact in our city.",
                 icon: Building,
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/assets/comm_eng_about_chapter.jpg?height=200&width=400",
                 color: "bg-purple-500",
               },
             ].map((card, index) => (
@@ -542,9 +542,9 @@ export default function HomePage() {
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-3">{card.title}</h3>
                     <p className="text-gray-600 mb-4">{card.description}</p>
-                    <Button variant="ghost" className="text-[#019c7d] hover:text-[#017a63] p-0">
+                    {/* <Button variant="ghost" className="text-[#019c7d] hover:text-[#017a63] p-0">
                       Learn More →
-                    </Button>
+                    </Button> */}
                   </CardContent>
                 </Card>
               </motion.div>
@@ -581,7 +581,7 @@ export default function HomePage() {
               <Card className="overflow-hidden h-full group cursor-pointer bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
                 <div className="relative overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=250&width=400"
+                    src="/assets/geoexplorer.jpg?height=250&width=400"
                     alt="GeoExplorer Series"
                     className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
@@ -661,7 +661,7 @@ export default function HomePage() {
               <Card className="overflow-hidden h-full group cursor-pointer bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200">
                 <div className="relative overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=250&width=400"
+                    src="/assets/quizseries.jpg?height=250&width=400"
                     alt="Quiz Series"
                     className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
