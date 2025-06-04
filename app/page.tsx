@@ -104,11 +104,12 @@ export default function HomePage() {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Events", href: "#events" },
+    { name: "Series", href: "#series" },
     { name: "Team", href: "#team" },
     { name: "Contact", href: "#contact" },
   ]
 
-  const seriesItems = ["ISME Geo Chronicles", "Geo Explorer", "Quiz Series"]
+  // const seriesItems = ["ISME Geo Chronicles", "Geo Explorer", "Quiz Series"]
 
   // Demo Events Data
   const events: Event[] = [
@@ -270,7 +271,7 @@ export default function HomePage() {
                 ))}
 
                 {/* Series Dropdown */}
-                <div className="relative">
+                {/* <div className="relative">
                   <motion.button
                     className="text-gray-200 hover:text-white px-3 py-2 text-sm font-medium flex items-center transition-colors"
                     onClick={() => setIsSeriesOpen(!isSeriesOpen)}
@@ -292,7 +293,7 @@ export default function HomePage() {
                     }}
                     transition={{ duration: 0.2 }}
                   >
-                    <div className="py-1">
+                    {/* <div className="py-1">
                       {seriesItems.map((item, index) => (
                         <motion.a
                           key={item}
@@ -305,9 +306,9 @@ export default function HomePage() {
                           {item}
                         </motion.a>
                       ))}
-                    </div>
-                  </motion.div>
-                </div>
+                    </div> */}
+                  {/* </motion.div> */}
+                {/* </div> */} 
               </div>
             </div>
 
@@ -552,6 +553,203 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* series section */}
+      <section id="series" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Our Educational Series</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              Explore our comprehensive educational series designed to enhance your understanding of              geography, geophysical activities through interactive learning experiences.
+            </p>
+          </motion.div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            {/* GeoExplorer Series */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10 }}
+            >
+              <Card className="overflow-hidden h-full group cursor-pointer bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
+                <div className="relative overflow-hidden">
+                  <img
+                    src="/placeholder.svg?height=250&width=400"
+                    alt="GeoExplorer Series"
+                    className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute top-4 left-4 p-3 rounded-full bg-blue-500">
+                    <BookOpen className="h-6 w-6 text-white" />
+                  </div>
+                  <Badge className="absolute top-4 right-4 bg-blue-600 text-white">Featured Series</Badge>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">GeoExplorer Series</h3>
+                  <p className="text-gray-600 mb-4">
+                    Dive into the fascinating world beneath our feet! This series unpacks core concepts in geophysics and geoscience, making complex topics accessible, engaging, and insightful for curious minds.
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center text-sm text-gray-500">
+                      <Calendar className="h-4 w-4 mr-2" />
+                      <span>Monthly Episodes</span>
+                    </div>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <Users className="h-4 w-4 mr-2" />
+                      <span>45+ Participants</span>
+                    </div>
+                  </div>
+                  <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">Explore Chronicles</Button>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* GeoChronicle Serie*/}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10 }}
+            >
+              <Card className="overflow-hidden h-full group cursor-pointer bg-gradient-to-br from-green-50 to-green-100 border-green-200">
+                <div className="relative overflow-hidden">
+                  <img
+                    src="/placeholder.svg?height=250&width=400"
+                    alt="GeoChronicle Serie"
+                    className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute top-4 left-4 p-3 rounded-full bg-green-500">
+                    <MapPin className="h-6 w-6 text-white" />
+                  </div>
+                  <Badge className="absolute top-4 right-4 bg-green-600 text-white">Interactive</Badge>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">GeoChronicle Serie</h3>
+                  <p className="text-gray-600 mb-4">
+                    nd insightful for curious minds.
+GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicle Series brings you the latest breakthroughs, discoveries, and news from the global geoscience community — all in one place.
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center text-sm text-gray-500">
+                      <Clock className="h-4 w-4 mr-2" />
+                      <span>Self-Paced Learning</span>
+                    </div>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <Award className="h-4 w-4 mr-2" />
+                      <span>Certification Available</span>
+                    </div>
+                  </div>
+                  <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Start Exploring</Button>
+                </CardContent>
+              </Card>
+            </motion.div>
+
+            {/* Quiz Series */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              viewport={{ once: true }}
+              whileHover={{ y: -10 }}
+            >
+              <Card className="overflow-hidden h-full group cursor-pointer bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200">
+                <div className="relative overflow-hidden">
+                  <img
+                    src="/placeholder.svg?height=250&width=400"
+                    alt="Quiz Series"
+                    className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute top-4 left-4 p-3 rounded-full bg-purple-500">
+                    <GraduationCap className="h-6 w-6 text-white" />
+                  </div>
+                  <Badge className="absolute top-4 right-4 bg-purple-600 text-white">Weekly</Badge>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-2xl font-semibold text-gray-900 mb-3">Quiz Series</h3>
+                  <p className="text-gray-600 mb-4">
+                    Test your knowledge and challenge your curiosity! This features thought-provoking questions on geoscience topics to sharpen your skills and spark friendly competition among enthusiasts.
+                  </p>
+                  <div className="space-y-2 mb-4">
+                    <div className="flex items-center text-sm text-gray-500">
+                      <Users className="h-4 w-4 mr-2" />
+                      <span>Competitive Format</span>
+                    </div>
+                    <div className="flex items-center text-sm text-gray-500">
+                      <Award className="h-4 w-4 mr-2" />
+                      <span>Leaderboard & Prizes</span>
+                    </div>
+                  </div>
+                  <Button className="w-full bg-purple-500 hover:bg-purple-600 text-white">Take Quiz</Button>
+                </CardContent>
+              </Card>
+            </motion.div>
+          </div>
+
+          {/* Series Statistics */}
+          <motion.div
+            className="mt-16 bg-white rounded-2xl shadow-lg p-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Series Impact</h3>
+            <div className="grid md:grid-cols-4 gap-6 text-center">
+              <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
+                <div className="text-3xl font-bold text-[#019c7d] mb-2">120+</div>
+                <div className="text-gray-600">Episodes Published</div>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
+                <div className="text-3xl font-bold text-[#019c7d] mb-2">2,500+</div>
+                <div className="text-gray-600">Students Engaged</div>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
+                <div className="text-3xl font-bold text-[#019c7d] mb-2">95%</div>
+                <div className="text-gray-600">Completion Rate</div>
+              </motion.div>
+              <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
+                <div className="text-3xl font-bold text-[#019c7d] mb-2">4.8/5</div>
+                <div className="text-gray-600">Average Rating</div>
+              </motion.div>
+            </div>
+          </motion.div>
+
+          {/* Call to Action */}
+          {/* <motion.div
+            className="mt-12 text-center"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            viewport={{ once: true }}
+          >
+            <h3 className="text-2xl font-bold text-gray-900 mb-4">Ready to Start Learning?</h3>
+            <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+              Join thousands of students who are already advancing their knowledge in local government and public
+              administration.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button size="lg" className="bg-[#019c7d] hover:bg-[#017a63] text-white px-8 py-3">
+                Browse All Series
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-[#019c7d] text-[#019c7d] hover:bg-[#019c7d] hover:text-white px-8 py-3"
+              >
+                View Schedule
+              </Button>
+            </div>
+          </motion.div> */}
+        </div>
+      </section>
+
       {/* Events Section */}
       <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
@@ -564,7 +762,7 @@ export default function HomePage() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Upcoming Events</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Join us for expert-led webinars, interactive lecture series, and hands-on workshops designed to deepen your geoscience knowledge and skills.
+              Join us for expert-led webinars, interactive lecture series, and hands-on workshops designed to deepen your geoscience knowledge and skills
             </p>
           </motion.div>
 
