@@ -103,8 +103,8 @@ export default function HomePage() {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
-    { name: "Events", href: "#events" },
     { name: "Series", href: "#series" },
+    { name: "Events", href: "#events" },
     { name: "Team", href: "#team" },
     { name: "Contact", href: "#contact" },
   ]
@@ -847,7 +847,7 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             {events
               .filter((event) => event.status === "recent")
               .map((event, index) => (
