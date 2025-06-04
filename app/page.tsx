@@ -897,7 +897,12 @@ export default function HomePage() {
                         <span>{event.location}</span>
                       </div>
                       <p className="text-gray-600 mb-4">{event.description}</p>
-                      <Button className="w-full bg-[#019c7d] hover:bg-[#017a63] text-white">View Recordings</Button>
+                      <Button
+                        onClick={() => window.open(event.link, "_blank", "noopener,noreferrer")}
+                        className="w-full bg-[#019c7d] hover:bg-[#017a63] text-white"
+                      >
+                        View Recordings
+                      </Button>
                     </CardContent>
                   </Card>
                 </motion.div>
