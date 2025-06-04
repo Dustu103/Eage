@@ -115,49 +115,61 @@ export default function HomePage() {
   const events: Event[] = [
     {
       id: 1,
-      title: "Municipal Budget Workshop",
+      title: "Future career aspects in geophysical mineral explorations",
       date: "2025-03-15",
       time: "2:00 PM - 4:00 PM",
-      location: "University Library, Room 301",
-      type: "Workshop",
+      location: "Online Session",
+      type: "GeoQuest Series",
       description:
         "Learn about municipal budgeting processes and financial management in local government with guest speaker from City Hall.",
-      image: "/placeholder.svg?height=200&width=400",
-      status: "upcoming",
+      image: "/recent_events/event_1.jpg?height=200&width=400",
+      status: "Available on Youtube",
     },
     {
       id: 2,
-      title: "City Manager Panel Discussion",
+      title: "Geosciences unlock the Earth's secrets; GeoQuest guides you to unlock your professional journey",
       date: "2025-02-20",
       time: "6:00 PM - 8:00 PM",
-      location: "Student Union Building",
-      type: "Panel",
+      location: "Online Session",
+      type: "GeoQuest Series",
       description: "Meet with local city managers and learn about career paths in municipal administration.",
-      image: "/placeholder.svg?height=200&width=400",
-      status: "upcoming",
+      image: "/recent_events/event_2.jpg?height=200&width=400",
+      status: "Available on Youtube",
     },
     {
       id: 3,
-      title: "Chapter Social & Networking Night",
-      date: "2025-04-10",
-      time: "7:00 PM - 9:00 PM",
-      location: "Campus Recreation Center",
-      type: "Social",
-      description: "Connect with fellow chapter members and enjoy food, games, and networking opportunities.",
-      image: "/placeholder.svg?height=200&width=400",
-      status: "upcoming",
+      title: "Time Management for students",
+      date: "2025-02-20",
+      time: "6:00 PM - 8:00 PM",
+      location: "Online Session",
+      type: "Special talk on",
+      description: "Meet with local city managers and learn about career paths in municipal administration.",
+      image: "/recent_events/event_3.jpg?height=200&width=400",
+      status: "Available on Youtube",
     },
     {
       id: 4,
-      title: "Local Government Innovation Seminar",
+      title: "Introduction to Python & Machine Learning for Geosciences",
       date: "2025-01-25",
       time: "3:00 PM - 5:00 PM",
-      location: "Business School Auditorium",
-      type: "Seminar",
+      location: "Online",
+      type: "Workshop",
       description:
         "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
-      image: "/placeholder.svg?height=200&width=400",
-      status: "past",
+      image: "/recent_events/event_4.jpg?height=200&width=400",
+      status: "Available on Youtube",
+    },
+    {
+      id: 5,
+      title: "Advanced Machine Learning Techniques for Geoscience Interpretation and Explanation",
+      date: "2025-01-25",
+      time: "3:00 PM - 5:00 PM",
+      location: "Online",
+      type: "GeoQuest Series",
+      description:
+        "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
+      image: "/recent_events/event_5.jpg?height=200&width=400",
+      status: "Available on Youtube",
     },
   ]
 
@@ -819,8 +831,67 @@ export default function HomePage() {
               ))}
           </div>
 
-          {/* Past Events */}
+      {/* Recent Events Section */}
+      <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
           <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Recent Events</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              """"""""
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {events
+              .filter((event) => event.status === "recent")
+              .map((event, index) => (
+                <motion.div
+                  key={event.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -5 }}
+                >
+                  <Card className="overflow-hidden h-full group cursor-pointer">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={event.image || "/recent_events/event_1.jpg"}
+                        alt={event.title}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <Badge className="absolute top-4 left-4 bg-[#019c7d] text-white">{event.type}</Badge>
+                    </div>
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-3">{event.title}</h3>
+                      <div className="flex items-center text-gray-600 mb-2">
+                        <Calendar className="h-4 w-4 mr-2" />
+                        <span>{new Date(event.date).toLocaleDateString()}</span>
+                      </div>
+                      <div className="flex items-center text-gray-600 mb-2">
+                        <Clock className="h-4 w-4 mr-2" />
+                        <span>{event.time}</span>
+                      </div>
+                      <div className="flex items-center text-gray-600 mb-4">
+                        <MapPin className="h-4 w-4 mr-2" />
+                        <span>{event.location}</span>
+                      </div>
+                      <p className="text-gray-600 mb-4">{event.description}</p>
+                      <Button className="w-full bg-[#019c7d] hover:bg-[#017a63] text-white">View Recordings</Button>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+          </div>
+
+          {/* Past Events */}
+          {/* <motion.div
             className="mt-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -849,7 +920,7 @@ export default function HomePage() {
                         <p className="text-sm text-gray-600">{new Date(event.date).toLocaleDateString()}</p>
                       </CardContent>
                     </Card>
-                  </motion.div>
+                  </motion.div> */}
                 ))}
             </div>
           </motion.div>
