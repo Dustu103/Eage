@@ -16,6 +16,7 @@ import {
   Facebook,
   Twitter,
   Linkedin,
+  Instagram,
   Youtube,
   Calendar,
   Clock,
@@ -43,6 +44,7 @@ interface Event {
   description: string
   image: string
   status: string
+  link: string
 }
 
 interface TeamMember {
@@ -109,6 +111,12 @@ export default function HomePage() {
     { name: "Contact", href: "#contact" },
   ]
 
+  const socialLinks = [
+    { href: "https://instagram.com/eage_iit.ism/", icon: Instagram },
+    { href: "https://www.linkedin.com/company/eage-iit-ism-dhanbad-student-chapter/", icon: Linkedin },
+    { href: "https://www.youtube.com/@EAGE_Student_Chapter_IITISM", icon: Youtube },
+  ];
+
   // const seriesItems = ["ISME Geo Chronicles", "Geo Explorer", "Quiz Series"]
 
   // Demo Events Data
@@ -124,6 +132,7 @@ export default function HomePage() {
         "Learn about municipal budgeting processes and financial management in local government with guest speaker from City Hall.",
       image: "/recent_events/event_1.jpg?height=200&width=400",
       status: "recent",
+      link: "",
     },
     {
       id: 2,
@@ -135,6 +144,7 @@ export default function HomePage() {
       description: "Meet with local city managers and learn about career paths in municipal administration.",
       image: "/recent_events/event_2.jpg?height=200&width=400",
       status: "recent",
+      link: "",
     },
     {
       id: 3,
@@ -146,30 +156,33 @@ export default function HomePage() {
       description: "Meet with local city managers and learn about career paths in municipal administration.",
       image: "/recent_events/event_3.jpg?height=200&width=400",
       status: "recent",
+      link: "",
     },
     {
       id: 4,
       title: "Introduction to Python & Machine Learning for Geosciences",
       date: "2025-01-25",
       time: "3:00 PM - 5:00 PM",
-      location: "Online",
+      location: "Online Session",
       type: "Workshop",
       description:
         "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
       image: "/recent_events/event_4.jpg?height=200&width=400",
       status: "recent",
+      link: "https://youtu.be/CZasLNHU3aw",
     },
     {
       id: 5,
       title: "Advanced Machine Learning Techniques for Geoscience Interpretation and Explanation",
       date: "2025-01-25",
       time: "3:00 PM - 5:00 PM",
-      location: "Online",
+      location: "Online Session",
       type: "GeoQuest Series",
       description:
         "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
       image: "/recent_events/event_5.jpg?height=200&width=400",
       status: "recent",
+      link: "",
     },
   ]
 
@@ -870,7 +883,7 @@ export default function HomePage() {
                       <Badge className="absolute top-4 left-4 bg-[#019c7d] text-white">{event.type}</Badge>
                     </div>
                     <CardContent className="p-6">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-3">{event.title}</h3>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-3 line-clamp-2">{event.title}</h3>
                       <div className="flex items-center text-gray-600 mb-2">
                         <Calendar className="h-4 w-4 mr-2" />
                         <span>{new Date(event.date).toLocaleDateString()}</span>
@@ -1072,7 +1085,7 @@ export default function HomePage() {
                     <div className="flex justify-center space-x-3">
                       <motion.a
                         href={`mailto:${member.email}`}
-                        className="text-gray-400 hover:text-[#019c7d] transition-colors"
+                        className="text-gray-400 hovesr:text-[#019c7d] transition-colors"
                         whileHover={{ scale: 1.2 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
                       >
@@ -1080,6 +1093,8 @@ export default function HomePage() {
                       </motion.a>
                       <motion.a
                         href={member.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="text-gray-400 hover:text-[#019c7d] transition-colors"
                         whileHover={{ scale: 1.2 }}
                         transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -1456,10 +1471,12 @@ export default function HomePage() {
 
               {/* Social Icons */}
               <div className="flex space-x-4 mt-6">
-                {[Facebook, Twitter, Linkedin, Youtube].map((Icon, index) => (
+                {socialLinks.map(({ href, icon: Icon }, index) => (
                   <motion.a
                     key={index}
-                    href="#"
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-gray-200 hover:text-white transition-colors"
                     whileHover={{ scale: 1.2, y: -2 }}
                     transition={{ type: "spring", stiffness: 400, damping: 10 }}
