@@ -115,49 +115,61 @@ export default function HomePage() {
   const events: Event[] = [
     {
       id: 1,
-      title: "Municipal Budget Workshop",
+      title: "Future career aspects in geophysical mineral explorations",
       date: "2025-03-15",
       time: "2:00 PM - 4:00 PM",
-      location: "University Library, Room 301",
-      type: "Workshop",
+      location: "Online Session",
+      type: "GeoQuest Series",
       description:
         "Learn about municipal budgeting processes and financial management in local government with guest speaker from City Hall.",
-      image: "/placeholder.svg?height=200&width=400",
-      status: "upcoming",
+      image: "/recent_events/event_1.jpg?height=200&width=400",
+      status: "recent",
     },
     {
       id: 2,
-      title: "City Manager Panel Discussion",
+      title: "Geosciences unlock the Earth's secrets; GeoQuest guides you to unlock your professional journey",
       date: "2025-02-20",
       time: "6:00 PM - 8:00 PM",
-      location: "Student Union Building",
-      type: "Panel",
+      location: "Online Session",
+      type: "GeoQuest Series",
       description: "Meet with local city managers and learn about career paths in municipal administration.",
-      image: "/placeholder.svg?height=200&width=400",
-      status: "upcoming",
+      image: "/recent_events/event_2.jpg?height=200&width=400",
+      status: "recent",
     },
     {
       id: 3,
-      title: "Chapter Social & Networking Night",
-      date: "2025-04-10",
-      time: "7:00 PM - 9:00 PM",
-      location: "Campus Recreation Center",
-      type: "Social",
-      description: "Connect with fellow chapter members and enjoy food, games, and networking opportunities.",
-      image: "/placeholder.svg?height=200&width=400",
-      status: "upcoming",
+      title: "Time Management for students",
+      date: "2025-02-20",
+      time: "6:00 PM - 8:00 PM",
+      location: "Online Session",
+      type: "Special talk on",
+      description: "Meet with local city managers and learn about career paths in municipal administration.",
+      image: "/recent_events/event_3.jpg?height=200&width=400",
+      status: "recent",
     },
     {
       id: 4,
-      title: "Local Government Innovation Seminar",
+      title: "Introduction to Python & Machine Learning for Geosciences",
       date: "2025-01-25",
       time: "3:00 PM - 5:00 PM",
-      location: "Business School Auditorium",
-      type: "Seminar",
+      location: "Online",
+      type: "Workshop",
       description:
         "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
-      image: "/placeholder.svg?height=200&width=400",
-      status: "past",
+      image: "/recent_events/event_4.jpg?height=200&width=400",
+      status: "recent",
+    },
+    {
+      id: 5,
+      title: "Advanced Machine Learning Techniques for Geoscience Interpretation and Explanation",
+      date: "2025-01-25",
+      time: "3:00 PM - 5:00 PM",
+      location: "Online",
+      type: "recent",
+      description:
+        "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
+      image: "/recent_events/event_5.jpg?height=200&width=400",
+      status: "Available on Youtube",
     },
   ]
 
@@ -165,47 +177,58 @@ export default function HomePage() {
   const teamMembers: TeamMember[] = [
     {
       id: 1,
-      name: "Alex Rodriguez",
+      name: "Amrit Krishn",
       position: "Chapter President",
       bio: "Senior in Public Administration, passionate about sustainable urban development and community engagement.",
-      image: "/placeholder.svg?height=300&width=300",
-      email: "alex.rodriguez@university.edu",
-      linkedin: "#",
-      year: "Senior",
-      major: "Public Administration",
+      image: "/profiles/amrit.jpg?height=300&width=300",
+      email: "21je0098@iitism.ac.in",
+      linkedin: "https://www.linkedin.com/in/amrit-krishn-45b67a20b/",
+      year: "Final Year",
+      major: "Int. MTech in Applied Geophysics",
     },
     {
       id: 2,
-      name: "Sarah Kim",
+      name: "Priti Das",
       position: "Vice President",
       bio: "Junior studying Political Science with a focus on local government policy and public service.",
-      image: "/placeholder.svg?height=300&width=300",
-      email: "sarah.kim@university.edu",
-      linkedin: "#",
-      year: "Junior",
-      major: "Political Science",
+      image: "/profiles/priti.jpg?height=300&width=300",
+      email: "23mc0061@iitism.ac.in",
+      linkedin: "https://www.linkedin.com/in/priti-das-70258b290/",
+      year: "Final Year",
+      major: "Msc. Tech in Applied Geophysics",
     },
     {
       id: 3,
-      name: "Marcus Johnson",
+      name: "Pratyush Singh",
       position: "Secretary",
       bio: "Graduate student in Urban Planning, interested in community development and municipal finance.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/profiles/pratyush.jpg?height=300&width=300",
       email: "marcus.johnson@university.edu",
-      linkedin: "#",
-      year: "Graduate",
-      major: "Urban Planning",
+      linkedin: "https://www.linkedin.com/in/pratyush-singh-2219w/",
+      year: "Pre-Final Year",
+      major: "Int. MTech in Applied Geophysics",
     },
     {
       id: 4,
-      name: "Emily Chen",
+      name: "Harit Dev Rana",
       position: "Treasurer",
       bio: "Sophomore in Public Policy, focused on budget analysis and financial management in government.",
-      image: "/placeholder.svg?height=300&width=300",
-      email: "emily.chen@university.edu",
-      linkedin: "#",
-      year: "Sophomore",
-      major: "Public Policy",
+      image: "/profiles/harit.jpg?height=300&width=300",
+      email: "24mc0036@iitism.ac.in",
+      linkedin: "https://www.linkedin.com/in/haritdevrana/",
+      year: "Pre-Final Year",
+      major: "Msc. Tech in Applied Geophysics",
+    },
+    {
+      id: 5,
+      name: "Manas",
+      position: "Event Manager",
+      bio: "Sophomore in Public Policy, focused on budget analysis and financial management in government.",
+      image: "/profiles/manas.jpg?height=300&width=300",
+      email: "22je0537@iitism.ac.in",
+      linkedin: "https://www.linkedin.com/in/manas-611a06255/",
+      year: "Pre-Final Year",
+      major: "Int. MTech in Applied Geophysics",
     },
   ]
 
@@ -374,9 +397,9 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <span className="text-[#019c7d]">EAGE</span>
+              <span className="text-[#019c7d]">EAGE IIT(ISM) Dhanbad</span>
               <br />
-              IIT(ISM) Dhanbad Student Chapter
+              Student Chapter
             </motion.h1>
             <motion.p
               className="text-xl md:text-2xl mb-8 leading-relaxed"
@@ -500,7 +523,7 @@ export default function HomePage() {
                 description:
                   "Attend workshops, seminars, and guest lectures from local government professionals to enhance your skills and knowledge.",
                 icon: GraduationCap,
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/assets/prof_dev_about_chapter.jpg?height=200&width=400",
                 color: "bg-blue-500",
               },
               {
@@ -508,7 +531,7 @@ export default function HomePage() {
                 description:
                   "Connect with fellow students, alumni, and professionals in the field through our regular events and activities.",
                 icon: Users,
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/assets/net_opr_about_chapter.jpg?height=200&width=400",
                 color: "bg-green-500",
               },
               {
@@ -516,7 +539,7 @@ export default function HomePage() {
                 description:
                   "Participate in local government meetings, volunteer for community projects, and make a real impact in our city.",
                 icon: Building,
-                image: "/placeholder.svg?height=200&width=400",
+                image: "/assets/comm_eng_about_chapter.jpg?height=200&width=400",
                 color: "bg-purple-500",
               },
             ].map((card, index) => (
@@ -542,9 +565,9 @@ export default function HomePage() {
                   <CardContent className="p-6">
                     <h3 className="text-xl font-semibold text-gray-900 mb-3">{card.title}</h3>
                     <p className="text-gray-600 mb-4">{card.description}</p>
-                    <Button variant="ghost" className="text-[#019c7d] hover:text-[#017a63] p-0">
+                    {/* <Button variant="ghost" className="text-[#019c7d] hover:text-[#017a63] p-0">
                       Learn More →
-                    </Button>
+                    </Button> */}
                   </CardContent>
                 </Card>
               </motion.div>
@@ -581,7 +604,7 @@ export default function HomePage() {
               <Card className="overflow-hidden h-full group cursor-pointer bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
                 <div className="relative overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=250&width=400"
+                    src="/assets/geoexplorer.jpg?height=250&width=400"
                     alt="GeoExplorer Series"
                     className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
@@ -621,29 +644,28 @@ export default function HomePage() {
               <Card className="overflow-hidden h-full group cursor-pointer bg-gradient-to-br from-green-50 to-green-100 border-green-200">
                 <div className="relative overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=250&width=400"
-                    alt="GeoChronicle Serie"
+                    src="/assets/geochronicles.jpg?height=250&width=400"
+                    alt="GeoChronicle Series"
                     className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute top-4 left-4 p-3 rounded-full bg-green-500">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
-                  <Badge className="absolute top-4 right-4 bg-green-600 text-white">Interactive</Badge>
+                  <Badge className="absolute top-4 right-4 bg-green-600 text-white">Weekly Series</Badge>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold text-gray-900 mb-3">GeoChronicle Serie</h3>
                   <p className="text-gray-600 mb-4">
-                    nd insightful for curious minds.
-GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicle Series brings you the latest breakthroughs, discoveries, and news from the global geoscience community — all in one place.
+                    Stay updated with the pulse of the planet. The GeoChronicle Series brings you the latest breakthroughs, discoveries, and news from the global geoscience community — all in one place.
                   </p>
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center text-sm text-gray-500">
                       <Clock className="h-4 w-4 mr-2" />
-                      <span>Self-Paced Learning</span>
+                      <span>Learn more about Geosciences</span>
                     </div>
                     <div className="flex items-center text-sm text-gray-500">
                       <Award className="h-4 w-4 mr-2" />
-                      <span>Certification Available</span>
+                      <span>Latest news from the industry</span>
                     </div>
                   </div>
                   <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Start Exploring</Button>
@@ -662,14 +684,14 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
               <Card className="overflow-hidden h-full group cursor-pointer bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200">
                 <div className="relative overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=250&width=400"
+                    src="/assets/quizseries.jpg?height=250&width=400"
                     alt="Quiz Series"
                     className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute top-4 left-4 p-3 rounded-full bg-purple-500">
                     <GraduationCap className="h-6 w-6 text-white" />
                   </div>
-                  <Badge className="absolute top-4 right-4 bg-purple-600 text-white">Weekly</Badge>
+                  <Badge className="absolute top-4 right-4 bg-purple-600 text-white">Mega Event</Badge>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold text-gray-900 mb-3">Quiz Series</h3>
@@ -751,7 +773,7 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
       </section>
 
       {/* Events Section */}
-      <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      {/* <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
@@ -807,10 +829,69 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
                   </Card>
                 </motion.div>
               ))}
+          </div> */}
+
+      {/* Recent Events Section */}
+      <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+        <div className="max-w-7xl mx-auto">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Recent Events</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+              """"""""
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 gap-8">
+            {events
+              .filter((event) => event.status === "recent")
+              .map((event, index) => (
+                <motion.div
+                  key={event.id}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.2 }}
+                  viewport={{ once: true }}
+                  whileHover={{ y: -5 }}
+                >
+                  <Card className="overflow-hidden h-full group cursor-pointer">
+                    <div className="relative overflow-hidden">
+                      <img
+                        src={event.image || "/placeholder.svg"}
+                        alt={event.title}
+                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                      />
+                      <Badge className="absolute top-4 left-4 bg-[#019c7d] text-white">{event.type}</Badge>
+                    </div>
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-3">{event.title}</h3>
+                      <div className="flex items-center text-gray-600 mb-2">
+                        <Calendar className="h-4 w-4 mr-2" />
+                        <span>{new Date(event.date).toLocaleDateString()}</span>
+                      </div>
+                      <div className="flex items-center text-gray-600 mb-2">
+                        <Clock className="h-4 w-4 mr-2" />
+                        <span>{event.time}</span>
+                      </div>
+                      <div className="flex items-center text-gray-600 mb-4">
+                        <MapPin className="h-4 w-4 mr-2" />
+                        <span>{event.location}</span>
+                      </div>
+                      <p className="text-gray-600 mb-4">{event.description}</p>
+                      <Button className="w-full bg-[#019c7d] hover:bg-[#017a63] text-white">View Recordings</Button>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
           </div>
 
           {/* Past Events */}
-          <motion.div
+          {/* <motion.div
             className="mt-16"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -839,7 +920,7 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
                         <p className="text-sm text-gray-600">{new Date(event.date).toLocaleDateString()}</p>
                       </CardContent>
                     </Card>
-                  </motion.div>
+                  </motion.div> */}
                 ))}
             </div>
           </motion.div>
@@ -1215,10 +1296,10 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
                       <Mail className="h-5 w-5 text-[#019c7d] mr-3" />
                       <div>
                         <p className="font-medium text-gray-900">Email</p>
-                        <p className="text-gray-600">icma.chapter@stateuniversity.edu</p>
+                        <p className="text-gray-600">eage.iitism.student.chapter@gmail.com</p>
                       </div>
                     </motion.div>
-                    <motion.div
+                    {/* <motion.div
                       className="flex items-center"
                       whileHover={{ x: 5 }}
                       transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -1228,7 +1309,7 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
                         <p className="font-medium text-gray-900">Phone</p>
                         <p className="text-gray-600">+1 (555) 123-4567</p>
                       </div>
-                    </motion.div>
+                    </motion.div> */}
                     <motion.div
                       className="flex items-center"
                       whileHover={{ x: 5 }}
@@ -1238,11 +1319,11 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
                       <div>
                         <p className="font-medium text-gray-900">Meeting Location</p>
                         <p className="text-gray-600">
-                          Student Union Building
+                          Department of Applied Geophysics
                           <br />
-                          Room 205
+                          IIT (ISM), Dhanbad
                           <br />
-                          State University Campus
+                          Jharkhand, India
                         </p>
                       </div>
                     </motion.div>
@@ -1250,7 +1331,7 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
                 </CardContent>
               </Card>
 
-              <Card className="p-6">
+              {/* <Card className="p-6">
                 <CardContent className="p-0">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Meeting Schedule</h3>
                   <div className="space-y-2">
@@ -1268,7 +1349,7 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               <Card className="p-6 bg-[#019c7d] text-white">
                 <CardContent className="p-0">
@@ -1301,17 +1382,17 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
             >
               <div className="flex items-center mb-4">
                 <img
-                  src="/placeholder.svg?height=40&width=120"
+                  src="/assets/eage.jpg?height=40&width=120"
                   alt="ICMA Logo"
                   className="h-10 w-auto filter brightness-0 invert mr-3"
                 />
                 <div>
-                  <div className="text-sm font-semibold">State University</div>
-                  <div className="text-xs opacity-90">ICMA Student Chapter</div>
+                  <div className="text-sm font-semibold">EAGE IIT (ISM) Dhanabd</div>
+                  <div className="text-xs opacity-90">Student Chapter</div>
                 </div>
               </div>
               <p className="text-gray-200 text-sm">
-                Preparing tomorrow's local government leaders through education, networking, and community engagement.
+                Enduring Influence for Future Generations — driving discovery and innovation in geoscience to understand our planet and prepare future scientists.
               </p>
             </motion.div>
 
@@ -1341,9 +1422,9 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
                   transition={{ duration: 0.6, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  <h4 className="text-lg font-semibold mb-4">ICMA Resources</h4>
+                  <h4 className="text-lg font-semibold mb-4">EAGE Resources</h4>
                   <ul className="space-y-2">
-                    {["ICMA Official Website", "Career Center", "Publications", "Training"].map((link) => (
+                    {["EAGE Official Website", "Career at EAGE", "Publications"].map((link) => (
                       <li key={link}>
                         <a href="#" className="text-gray-200 hover:text-white transition-colors">
                           {link}
@@ -1390,7 +1471,7 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
           </div>
 
           {/* Bottom Footer */}
-          <motion.div
+          {/* <motion.div
             className="border-t border-gray-600 mt-8 pt-8 text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -1407,7 +1488,7 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
                 Contact Us
               </a>
             </p>
-          </motion.div>
+          </motion.div> */}
         </div>
       </footer>
     </div>
