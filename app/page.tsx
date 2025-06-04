@@ -850,6 +850,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-3 gap-8">
             {events
               .filter((event) => event.status === "recent")
+              .reverse()
               .map((event, index) => (
                 <motion.div
                   key={event.id}
@@ -1039,7 +1040,7 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
             {teamMembers.map((member, index) => (
               <motion.div
                 key={member.id}
