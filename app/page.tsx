@@ -73,11 +73,11 @@ export default function HomePage() {
   const heroOpacity = useTransform(scrollY, [0, 300], [1, 0])
 
   // Counter animation
-  const [counters, setCounters] = useState({ members: 0, events: 0, years: 0 })
+  const [counters, setCounters] = useState({ members: 0, events: 0, informational: 0 })
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setCounters({ members: 85, events: 24, years: 8 })
+      setCounters({ members: 60, events: 10, informational: 40 })
     }, 1000)
     return () => clearTimeout(timer)
   }, [])
@@ -358,7 +358,7 @@ export default function HomePage() {
       <section id="home" className="relative h-screen overflow-hidden">
         <motion.div className="absolute inset-0" style={{ y: heroY }}>
           <img
-            src="/placeholder.svg?height=1080&width=1920"
+            src="/assets/iitism.jpeg"
             alt="iitism DHANBAD"
             className="w-full h-full object-cover"
           />
@@ -467,9 +467,9 @@ export default function HomePage() {
                 animate={{ scale: [1, 1.1, 1] }}
                 transition={{ duration: 2, delay: 1.4 }}
               >
-                {counters.years}
+                {counters.informational}+
               </motion.div>
-              <div className="text-lg opacity-90">Years Established</div>
+              <div className="text-lg opacity-90">Informational posts</div>
             </motion.div>
           </div>
         </div>
@@ -487,9 +487,7 @@ export default function HomePage() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Our Chapter</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              The State University ICMA Student Chapter is a vibrant community of undergraduate and graduate students
-              passionate about public service and local government management. We provide hands-on learning
-              opportunities, professional development, and networking with industry leaders.
+              The European Association of Geoscientists and Engineers (EAGE) Student Chapter at IIT (ISM) Dhanbad is dedicated to creating an environment that fosters learning, collaboration, and innovation in the field of Applied Geophysics. The chapter prioritizes the promotion of geophysical/geological sciences through webinars and live talks that facilitate student understanding beyond the confines of traditional classroom learning through diverse activities conducted throughout the year.
             </p>
           </motion.div>
 
@@ -566,8 +564,7 @@ export default function HomePage() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Upcoming Events</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Join us for exciting events designed to enhance your learning experience and expand your professional
-              network in local government.
+              Join us for expert-led webinars, interactive lecture series, and hands-on workshops designed to deepen your geoscience knowledge and skills.
             </p>
           </motion.div>
 
