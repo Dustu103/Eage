@@ -142,7 +142,7 @@ export default function HomePage() {
       date: "2025-02-20",
       time: "6:00 PM - 8:00 PM",
       location: "Online Session",
-      type: "Special talk on",
+      type: "Special talk",
       description: "Meet with local city managers and learn about career paths in municipal administration.",
       image: "/recent_events/event_3.jpg?height=200&width=400",
       status: "recent",
@@ -165,11 +165,11 @@ export default function HomePage() {
       date: "2025-01-25",
       time: "3:00 PM - 5:00 PM",
       location: "Online",
-      type: "recent",
+      type: "GeoQuest Series",
       description:
         "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
       image: "/recent_events/event_5.jpg?height=200&width=400",
-      status: "Available on Youtube",
+      status: "recent",
     },
   ]
 
