@@ -921,10 +921,10 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                   <Button
                     size="lg"
-                    variant="outline"
-                    className="border-white text-white hover:bg-white hover:text-[#019c7d] px-8 py-3"
+                    // variant="outline"
+                    className="bg-white text-[#019c7d] hover:bg-gray-100 px-8 py-3 font-semibold"
                   >
-                    <ExternalLink className="mr-2 h-4 w-4" />
+                    <ExternalLink className="mr-2 h-4 w-4 hover:text-[#019c7d]" />
                     Visit ICMA Official
                   </Button>
                 </motion.div>
