@@ -245,8 +245,8 @@ export default function HomePage() {
                 alt="ICMA Logo"
               />
               <div className="text-white">
-                <div className="text-sm font-semibold">State University</div>
-                <div className="text-xs opacity-90">ICMA Student Chapter</div>
+                <div className="text-sm font-semibold">EAGE</div>
+                <div className="text-xs opacity-90">IITISM Dhanbad Student Chapter</div>
               </div>
             </motion.div>
 
@@ -359,7 +359,7 @@ export default function HomePage() {
         <motion.div className="absolute inset-0" style={{ y: heroY }}>
           <img
             src="/placeholder.svg?height=1080&width=1920"
-            alt="State University Campus"
+            alt="iitism DHANBAD"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
@@ -373,9 +373,9 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <span className="text-[#019c7d]">State University</span>
+              <span className="text-[#019c7d]">EAGE</span>
               <br />
-              ICMA Student Chapter
+              IIT(ISM) Dhanbad Student Chapter
             </motion.h1>
             <motion.p
               className="text-xl md:text-2xl mb-8 leading-relaxed"
@@ -383,8 +383,8 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              Preparing tomorrow's local government leaders through hands-on learning, professional networking, and
-              community engagement
+               Enduring Influence for Future Generations — driving discovery and innovation in geoscience to understand our planet and prepare future scientists.
+
             </motion.p>
             <motion.div
               className="flex flex-col sm:flex-row gap-4 justify-center"
@@ -398,7 +398,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-[#019c7d] px-8 py-3"
+                className="border-white hover:bg-white text-[#019c7d] px-8 py-3"
               >
                 Learn More
               </Button>
