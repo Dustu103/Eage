@@ -621,29 +621,28 @@ export default function HomePage() {
               <Card className="overflow-hidden h-full group cursor-pointer bg-gradient-to-br from-green-50 to-green-100 border-green-200">
                 <div className="relative overflow-hidden">
                   <img
-                    src="/placeholder.svg?height=250&width=400"
-                    alt="GeoChronicle Serie"
+                    src="/assets/geochronicles.jpg?height=250&width=400"
+                    alt="GeoChronicle Series"
                     className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   <div className="absolute top-4 left-4 p-3 rounded-full bg-green-500">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
-                  <Badge className="absolute top-4 right-4 bg-green-600 text-white">Interactive</Badge>
+                  <Badge className="absolute top-4 right-4 bg-green-600 text-white">Weekly Series</Badge>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold text-gray-900 mb-3">GeoChronicle Serie</h3>
                   <p className="text-gray-600 mb-4">
-                    nd insightful for curious minds.
-GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicle Series brings you the latest breakthroughs, discoveries, and news from the global geoscience community — all in one place.
+                    Stay updated with the pulse of the planet. The GeoChronicle Series brings you the latest breakthroughs, discoveries, and news from the global geoscience community — all in one place.
                   </p>
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center text-sm text-gray-500">
                       <Clock className="h-4 w-4 mr-2" />
-                      <span>Self-Paced Learning</span>
+                      <span>Learn more about Geosciences</span>
                     </div>
                     <div className="flex items-center text-sm text-gray-500">
                       <Award className="h-4 w-4 mr-2" />
-                      <span>Certification Available</span>
+                      <span>Latest news from the industry</span>
                     </div>
                   </div>
                   <Button className="w-full bg-green-500 hover:bg-green-600 text-white">Start Exploring</Button>
@@ -669,7 +668,7 @@ GeoChronicle Series : Stay updated with the pulse of the planet. The GeoChronicl
                   <div className="absolute top-4 left-4 p-3 rounded-full bg-purple-500">
                     <GraduationCap className="h-6 w-6 text-white" />
                   </div>
-                  <Badge className="absolute top-4 right-4 bg-purple-600 text-white">Weekly</Badge>
+                  <Badge className="absolute top-4 right-4 bg-purple-600 text-white">Mega Event</Badge>
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold text-gray-900 mb-3">Quiz Series</h3>
