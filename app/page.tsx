@@ -201,18 +201,18 @@ export default function HomePage() {
       name: "Harit Dev Rana",
       position: "Treasurer",
       bio: "Sophomore in Public Policy, focused on budget analysis and financial management in government.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/profiles/harit.jpg?height=300&width=300",
       email: "24mc0036@iitism.ac.in",
       linkedin: "https://www.linkedin.com/in/haritdevrana/",
       year: "Pre-Final Year",
       major: "Msc. Tech in Applied Geophysics",
     },
     {
-      id: 4,
+      id: 5,
       name: "Manas",
       position: "Event Manager",
       bio: "Sophomore in Public Policy, focused on budget analysis and financial management in government.",
-      image: "/placeholder.svg?height=300&width=300",
+      image: "/profiles/manas.jpg?height=300&width=300",
       email: "22je0537@iitism.ac.in",
       linkedin: "https://www.linkedin.com/in/manas-611a06255/",
       year: "Pre-Final Year",
@@ -385,9 +385,9 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
             >
-              <span className="text-[#019c7d]">EAGE</span>
+              <span className="text-[#019c7d]">EAGE IIT(ISM) Dhanbad</span>
               <br />
-              IIT(ISM) Dhanbad Student Chapter
+              Student Chapter
             </motion.h1>
             <motion.p
               className="text-xl md:text-2xl mb-8 leading-relaxed"
@@ -1225,10 +1225,10 @@ export default function HomePage() {
                       <Mail className="h-5 w-5 text-[#019c7d] mr-3" />
                       <div>
                         <p className="font-medium text-gray-900">Email</p>
-                        <p className="text-gray-600">icma.chapter@stateuniversity.edu</p>
+                        <p className="text-gray-600">eage.iitism.student.chapter@gmail.com</p>
                       </div>
                     </motion.div>
-                    <motion.div
+                    {/* <motion.div
                       className="flex items-center"
                       whileHover={{ x: 5 }}
                       transition={{ type: "spring", stiffness: 400, damping: 10 }}
@@ -1238,7 +1238,7 @@ export default function HomePage() {
                         <p className="font-medium text-gray-900">Phone</p>
                         <p className="text-gray-600">+1 (555) 123-4567</p>
                       </div>
-                    </motion.div>
+                    </motion.div> */}
                     <motion.div
                       className="flex items-center"
                       whileHover={{ x: 5 }}
@@ -1248,11 +1248,11 @@ export default function HomePage() {
                       <div>
                         <p className="font-medium text-gray-900">Meeting Location</p>
                         <p className="text-gray-600">
-                          Student Union Building
+                          Department of Applied Geophysics
                           <br />
-                          Room 205
+                          IIT (ISM), Dhanbad
                           <br />
-                          State University Campus
+                          Jharkhand, India
                         </p>
                       </div>
                     </motion.div>
@@ -1260,7 +1260,7 @@ export default function HomePage() {
                 </CardContent>
               </Card>
 
-              <Card className="p-6">
+              {/* <Card className="p-6">
                 <CardContent className="p-0">
                   <h3 className="text-xl font-semibold text-gray-900 mb-4">Meeting Schedule</h3>
                   <div className="space-y-2">
@@ -1278,7 +1278,7 @@ export default function HomePage() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               <Card className="p-6 bg-[#019c7d] text-white">
                 <CardContent className="p-0">
@@ -1311,17 +1311,17 @@ export default function HomePage() {
             >
               <div className="flex items-center mb-4">
                 <img
-                  src="/placeholder.svg?height=40&width=120"
+                  src="/assets/eage.jpg?height=40&width=120"
                   alt="ICMA Logo"
                   className="h-10 w-auto filter brightness-0 invert mr-3"
                 />
                 <div>
-                  <div className="text-sm font-semibold">State University</div>
-                  <div className="text-xs opacity-90">ICMA Student Chapter</div>
+                  <div className="text-sm font-semibold">EAGE IIT (ISM) Dhanabd</div>
+                  <div className="text-xs opacity-90">Student Chapter</div>
                 </div>
               </div>
               <p className="text-gray-200 text-sm">
-                Preparing tomorrow's local government leaders through education, networking, and community engagement.
+                Enduring Influence for Future Generations — driving discovery and innovation in geoscience to understand our planet and prepare future scientists.
               </p>
             </motion.div>
 
@@ -1351,9 +1351,9 @@ export default function HomePage() {
                   transition={{ duration: 0.6, delay: 0.2 }}
                   viewport={{ once: true }}
                 >
-                  <h4 className="text-lg font-semibold mb-4">ICMA Resources</h4>
+                  <h4 className="text-lg font-semibold mb-4">EAGE Resources</h4>
                   <ul className="space-y-2">
-                    {["ICMA Official Website", "Career Center", "Publications", "Training"].map((link) => (
+                    {["EAGE Official Website", "Career at EAGE", "Publications"].map((link) => (
                       <li key={link}>
                         <a href="#" className="text-gray-200 hover:text-white transition-colors">
                           {link}
@@ -1400,7 +1400,7 @@ export default function HomePage() {
           </div>
 
           {/* Bottom Footer */}
-          <motion.div
+          {/* <motion.div
             className="border-t border-gray-600 mt-8 pt-8 text-center"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -1417,7 +1417,7 @@ export default function HomePage() {
                 Contact Us
               </a>
             </p>
-          </motion.div>
+          </motion.div> */}
         </div>
       </footer>
     </div>
