@@ -123,7 +123,7 @@ export default function HomePage() {
       description:
         "Learn about municipal budgeting processes and financial management in local government with guest speaker from City Hall.",
       image: "/recent_events/event_1.jpg?height=200&width=400",
-      status: "Available on Youtube",
+      status: "recent",
     },
     {
       id: 2,
@@ -134,7 +134,7 @@ export default function HomePage() {
       type: "GeoQuest Series",
       description: "Meet with local city managers and learn about career paths in municipal administration.",
       image: "/recent_events/event_2.jpg?height=200&width=400",
-      status: "Available on Youtube",
+      status: "recent",
     },
     {
       id: 3,
@@ -145,7 +145,7 @@ export default function HomePage() {
       type: "Special talk on",
       description: "Meet with local city managers and learn about career paths in municipal administration.",
       image: "/recent_events/event_3.jpg?height=200&width=400",
-      status: "Available on Youtube",
+      status: "recent",
     },
     {
       id: 4,
@@ -157,7 +157,7 @@ export default function HomePage() {
       description:
         "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
       image: "/recent_events/event_4.jpg?height=200&width=400",
-      status: "Available on Youtube",
+      status: "recent",
     },
     {
       id: 5,
@@ -165,7 +165,7 @@ export default function HomePage() {
       date: "2025-01-25",
       time: "3:00 PM - 5:00 PM",
       location: "Online",
-      type: "GeoQuest Series",
+      type: "recent",
       description:
         "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
       image: "/recent_events/event_5.jpg?height=200&width=400",
@@ -773,7 +773,7 @@ export default function HomePage() {
       </section>
 
       {/* Events Section */}
-      <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
+      {/* <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
@@ -829,7 +829,7 @@ export default function HomePage() {
                   </Card>
                 </motion.div>
               ))}
-          </div>
+          </div> */}
 
       {/* Recent Events Section */}
       <section id="events" className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
@@ -862,7 +862,7 @@ export default function HomePage() {
                   <Card className="overflow-hidden h-full group cursor-pointer">
                     <div className="relative overflow-hidden">
                       <img
-                        src={event.image || "/recent_events/event_1.jpg"}
+                        src={event.image || "/placeholder.svg"}
                         alt={event.title}
                         className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                       />
