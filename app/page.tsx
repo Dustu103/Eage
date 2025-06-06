@@ -1113,8 +1113,8 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-        <div className="flex flex-col sm:flex-row">
-          <Link href="/app/team_page">
+        <div className="flex flex-col sm:flex-row justify-center">
+          <Link href="/app/team_page.tsx">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"
