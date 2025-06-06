@@ -1058,7 +1058,7 @@ export default function HomePage() {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 mb-4">
             {teamMembers.map((member, index) => (
               <motion.div
                 key={member.id}
@@ -1114,11 +1114,11 @@ export default function HomePage() {
           </div>
         </div>
         <div className="flex flex-col sm:flex-row">
-          <Link href="/team_page">
+          <Link href="/app/team_page">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"
-                className="bg-[#019c7d] text-white hover:bg-[#019c9d] px-8 py-3 font-semibold"
+                className="bg-[#019c7d] text-white hover:bg-[#019c9d] px-8 py-3 font-semibold "
               >
                 View Extended Team
               </Button>
