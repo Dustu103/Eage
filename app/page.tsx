@@ -2,6 +2,7 @@
 
 import type React from "react"
 
+import Link from "next/link";
 import { useState, useEffect } from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import {
@@ -132,7 +133,7 @@ export default function HomePage() {
         "Learn about municipal budgeting processes and financial management in local government with guest speaker from City Hall.",
       image: "/recent_events/event_1.jpg?height=200&width=400",
       status: "recent",
-      link: "",
+      link: "https://www.youtube.com/@EAGE_Student_Chapter_IITISM",
     },
     {
       id: 2,
@@ -144,11 +145,11 @@ export default function HomePage() {
       description: "Meet with local city managers and learn about career paths in municipal administration.",
       image: "/recent_events/event_2.jpg?height=200&width=400",
       status: "recent",
-      link: "",
+      link: "https://www.youtube.com/@EAGE_Student_Chapter_IITISM",
     },
     {
       id: 3,
-      title: "Time Management for students",
+      title: "Special Talk on Time Management for Students",
       date: "2025-02-20",
       time: "6:00 PM - 8:00 PM",
       location: "Online Session",
@@ -156,7 +157,7 @@ export default function HomePage() {
       description: "Meet with local city managers and learn about career paths in municipal administration.",
       image: "/recent_events/event_3.jpg?height=200&width=400",
       status: "recent",
-      link: "",
+      link: "https://www.youtube.com/@EAGE_Student_Chapter_IITISM",
     },
     {
       id: 4,
@@ -182,7 +183,7 @@ export default function HomePage() {
         "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
       image: "/recent_events/event_5.jpg?height=200&width=400",
       status: "recent",
-      link: "",
+      link: "https://youtu.be/n_SdVNjxyZY",
     },
   ]
 
@@ -621,10 +622,10 @@ export default function HomePage() {
                     alt="GeoExplorer Series"
                     className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 left-4 p-3 rounded-full bg-blue-500">
+                  {/* <div className="absolute top-4 left-4 p-3 rounded-full bg-blue-500">
                     <BookOpen className="h-6 w-6 text-white" />
                   </div>
-                  <Badge className="absolute top-4 right-4 bg-blue-600 text-white">Featured Series</Badge>
+                  <Badge className="absolute top-4 right-4 bg-blue-600 text-white">Featured Series</Badge> */}
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold text-gray-900 mb-3">GeoExplorer Series</h3>
@@ -634,11 +635,11 @@ export default function HomePage() {
                   <div className="space-y-2 mb-4">
                     <div className="flex items-center text-sm text-gray-500">
                       <Calendar className="h-4 w-4 mr-2" />
-                      <span>Monthly Episodes</span>
+                      <span>Weekly Episodes</span>
                     </div>
                     <div className="flex items-center text-sm text-gray-500">
                       <Users className="h-4 w-4 mr-2" />
-                      <span>45+ Participants</span>
+                      <span>4500+ Impressions</span>
                     </div>
                   </div>
                   <Button className="w-full bg-blue-500 hover:bg-blue-600 text-white">Explore Chronicles</Button>
@@ -661,10 +662,10 @@ export default function HomePage() {
                     alt="GeoChronicle Series"
                     className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 left-4 p-3 rounded-full bg-green-500">
+                  {/* <div className="absolute top-4 left-4 p-3 rounded-full bg-green-500">
                     <MapPin className="h-6 w-6 text-white" />
                   </div>
-                  <Badge className="absolute top-4 right-4 bg-green-600 text-white">Weekly Series</Badge>
+                  <Badge className="absolute top-4 right-4 bg-green-600 text-white">Weekly Series</Badge> */}
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold text-gray-900 mb-3">GeoChronicle Serie</h3>
@@ -701,10 +702,10 @@ export default function HomePage() {
                     alt="Quiz Series"
                     className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 left-4 p-3 rounded-full bg-purple-500">
+                  {/* <div className="absolute top-4 left-4 p-3 rounded-full bg-purple-500">
                     <GraduationCap className="h-6 w-6 text-white" />
                   </div>
-                  <Badge className="absolute top-4 right-4 bg-purple-600 text-white">Mega Event</Badge>
+                  <Badge className="absolute top-4 right-4 bg-purple-600 text-white">Mega Event</Badge> */}
                 </div>
                 <CardContent className="p-6">
                   <h3 className="text-2xl font-semibold text-gray-900 mb-3">Quiz Series</h3>
@@ -727,7 +728,7 @@ export default function HomePage() {
             </motion.div>
           </div>
 
-          {/* Series Statistics */}
+          {/* Chapters Statistics */}
           <motion.div
             className="mt-16 bg-white rounded-2xl shadow-lg p-8"
             initial={{ opacity: 0, y: 30 }}
@@ -735,23 +736,23 @@ export default function HomePage() {
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Series Impact</h3>
+            <h3 className="text-2xl font-bold text-gray-900 text-center mb-8">Our Impact</h3>
             <div className="grid md:grid-cols-4 gap-6 text-center">
               <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
                 <div className="text-3xl font-bold text-[#019c7d] mb-2">120+</div>
-                <div className="text-gray-600">Episodes Published</div>
+                <div className="text-gray-600">Series Published</div>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
-                <div className="text-3xl font-bold text-[#019c7d] mb-2">2,500+</div>
+                <div className="text-3xl font-bold text-[#019c7d] mb-2">4,500+</div>
                 <div className="text-gray-600">Students Engaged</div>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
-                <div className="text-3xl font-bold text-[#019c7d] mb-2">95%</div>
-                <div className="text-gray-600">Completion Rate</div>
+                <div className="text-3xl font-bold text-[#019c7d] mb-2">6+</div>
+                <div className="text-gray-600">Webinars Hosted</div>
               </motion.div>
               <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 300, damping: 10 }}>
-                <div className="text-3xl font-bold text-[#019c7d] mb-2">4.8/5</div>
-                <div className="text-gray-600">Average Rating</div>
+                <div className="text-3xl font-bold text-[#019c7d] mb-2">1000+</div>
+                <div className="text-gray-600">Members Subscribed</div>
               </motion.div>
             </div>
           </motion.div>
@@ -856,7 +857,7 @@ export default function HomePage() {
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Recent Events</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              """"""""
+              Join us for expert-led webinars, interactive lecture series, and hands-on workshops designed to deepen your geoscience knowledge and skills.
             </p>
           </motion.div>
 
@@ -880,7 +881,7 @@ export default function HomePage() {
                         alt={event.title}
                         className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                       />
-                      <Badge className="absolute top-4 left-4 bg-[#019c7d] text-white">{event.type}</Badge>
+                      <Badge className="absolute top-4 right-4 bg-[#019c7d] text-white">{event.type}</Badge>
                     </div>
                     <CardContent className="p-6">
                       <h3 className="text-xl font-semibold text-gray-900 mb-3 line-clamp-2">{event.title}</h3>
@@ -899,7 +900,7 @@ export default function HomePage() {
                       <p className="text-gray-600 mb-4">{event.description}</p>
                       <Button
                         onClick={() => window.open(event.link, "_blank", "noopener,noreferrer")}
-                        className="w-full bg-[#019c7d] hover:bg-[#017a63] text-white"
+                        className="w-full bg-[#019c7d] hover:bg-[#FF0000] text-white"
                       >
                         View Recordings
                       </Button>
@@ -1112,6 +1113,18 @@ export default function HomePage() {
               </motion.div>
             ))}
           </div>
+        </div>
+        <div className="flex flex-col sm:flex-row">
+          <Link href="/team_page">
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                size="lg"
+                className="bg-[#019c7d] text-white hover:bg-[#019c9d] px-8 py-3 font-semibold"
+              >
+                View Extended Team
+              </Button>
+            </motion.div>
+          </Link>
         </div>
       </section>
 
