@@ -872,7 +872,6 @@ export default function HomePage() {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: index * 0.2 }}
                   viewport={{ once: true }}
-                  whileHover={{ y: -5 }}
                 >
                   <Card className="overflow-hidden h-full group cursor-pointer">
                     <div className="relative overflow-hidden">
