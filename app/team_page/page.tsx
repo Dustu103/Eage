@@ -487,7 +487,7 @@ export default function HomePage() {
       </motion.nav>
 
       {/* Team Section */}
-      <section id="team" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="team" className="mt-16 py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <motion.div
             className="text-center mb-16"
