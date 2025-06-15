@@ -44,7 +44,6 @@ interface Event {
   type: string
   description: string
   image: string
-  status: string
   link: string
 }
 
@@ -132,7 +131,6 @@ export default function HomePage() {
       description:
         "Learn about municipal budgeting processes and financial management in local government with guest speaker from City Hall.",
       image: "/recent_events/event_1.jpg?height=200&width=400",
-      status: "recent",
       link: "https://www.youtube.com/@EAGE_Student_Chapter_IITISM",
     },
     {
@@ -144,7 +142,7 @@ export default function HomePage() {
       type: "GeoQuest Series",
       description: "Meet with local city managers and learn about career paths in municipal administration.",
       image: "/recent_events/event_2.jpg?height=200&width=400",
-      status: "recent",
+      
       link: "https://www.youtube.com/@EAGE_Student_Chapter_IITISM",
     },
     {
@@ -156,7 +154,7 @@ export default function HomePage() {
       type: "Special talk",
       description: "Meet with local city managers and learn about career paths in municipal administration.",
       image: "/recent_events/event_3.jpg?height=200&width=400",
-      status: "recent",
+      
       link: "https://www.youtube.com/@EAGE_Student_Chapter_IITISM",
     },
     {
@@ -169,7 +167,7 @@ export default function HomePage() {
       description:
         "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
       image: "/recent_events/event_4.jpg?height=200&width=400",
-      status: "recent",
+      
       link: "https://youtu.be/CZasLNHU3aw",
     },
     {
@@ -182,7 +180,7 @@ export default function HomePage() {
       description:
         "Explored cutting-edge technologies and innovative approaches being implemented in our local government.",
       image: "/recent_events/event_5.jpg?height=200&width=400",
-      status: "recent",
+      
       link: "https://youtu.be/n_SdVNjxyZY",
     },
   ]
@@ -862,9 +860,7 @@ export default function HomePage() {
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {events
-              .filter((event) => event.status === "recent")
-              .reverse()
+            {events.slice(-3)
               .map((event, index) => (
                 <motion.div
                   key={event.id}
@@ -907,8 +903,21 @@ export default function HomePage() {
                   </Card>
                 </motion.div>
               ))}
-          </div>
 
+               
+          </div>
+           <div className="flex flex-col sm:flex-row justify-center mt-2">
+               <Link href="/allevents">
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                size="lg"
+                className="bg-[#019c7d] text-white hover:bg-[#019c9d] px-4 py-3 font-semibold "
+              >
+                Explore All Events
+              </Button>
+            </motion.div>
+          </Link>
+          </div>
           {/* Past Events */}
           {/* <motion.div
             className="mt-16"
@@ -1118,7 +1127,7 @@ export default function HomePage() {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"
-                className="bg-[#019c7d] text-white hover:bg-[#019c9d] px-8 py-3 font-semibold "
+                className="bg-[#019c7d] text-white hover:bg-[#019c9d] px-4 py-3 font-semibold "
               >
                 View Extended Team
               </Button>
