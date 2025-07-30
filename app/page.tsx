@@ -259,7 +259,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-hidden">
       {/* Navigation */}
       <motion.nav
         className="fixed top-0 w-full z-50 bg-[#019c7d] shadow-lg"
@@ -276,8 +276,8 @@ export default function HomePage() {
               transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
               <img
-                className="h-8 w-auto filter brightness-0 invert mr-3"
-                src="/placeholder.svg?height=32&width=120"
+                className="h-8 w-auto mr-3 object-fill"
+                src="/assets/eage.jpg?height=32&width=32"
                 alt="ICMA Logo"
               />
               <div className="text-white">
@@ -401,8 +401,8 @@ export default function HomePage() {
           <div className="absolute inset-0 bg-gradient-to-r from-black/60 to-black/30" />
         </motion.div>
 
-        <motion.div className="relative z-10 flex items-center justify-center h-full" style={{ opacity: heroOpacity }}>
-          <div className="text-center text-white px-4 max-w-4xl">
+        <motion.div className="relative z-10 flex items-center justify-center h-full " style={{ opacity: heroOpacity }}>
+          <div className="text-center text-white px-4 max-w-4xl mt-[60px] sm:mt-0">
             <motion.h1
               className="text-5xl md:text-7xl font-bold mb-6"
               initial={{ opacity: 0, y: 50 }}
@@ -428,7 +428,7 @@ export default function HomePage() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
             >
-              <Button size="lg" className="bg-[#019c7d] hover:bg-[#017a63] text-white px-8 py-3">
+              <Button size="lg" className="bg-[#019c7d] hover:bg-[#017a63] text-white px-8 py-3" onClick={() => window.open("https://www.linkedin.com/company/eage-iit-ism-dhanbad-student-chapter/posts/?feedView=all", "_blank", "noopener,noreferrer")}>
                 Join Our Chapter
               </Button>
               <Button
@@ -618,7 +618,7 @@ export default function HomePage() {
                   <img
                     src="/assets/geoexplorer.jpg?height=250&width=400"
                     alt="GeoExplorer Series"
-                    className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full md:h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {/* <div className="absolute top-4 left-4 p-3 rounded-full bg-blue-500">
                     <BookOpen className="h-6 w-6 text-white" />
@@ -658,7 +658,7 @@ export default function HomePage() {
                   <img
                     src="/assets/geochronicles.jpg?height=250&width=400"
                     alt="GeoChronicle Series"
-                    className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full md:h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {/* <div className="absolute top-4 left-4 p-3 rounded-full bg-green-500">
                     <MapPin className="h-6 w-6 text-white" />
@@ -698,7 +698,7 @@ export default function HomePage() {
                   <img
                     src="/assets/quizseries.jpg?height=250&width=400"
                     alt="Quiz Series"
-                    className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full md:h-56 object-cover transition-transform duration-300 group-hover:scale-110"
                   />
                   {/* <div className="absolute top-4 left-4 p-3 rounded-full bg-purple-500">
                     <GraduationCap className="h-6 w-6 text-white" />
@@ -874,7 +874,7 @@ export default function HomePage() {
                       <img
                         src={event.image || "/placeholder.svg"}
                         alt={event.title}
-                        className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                        className="w-full h-full md:h-48 object-cover transition-transform duration-300 group-hover:scale-110"
                       />
                       <Badge className="absolute top-4 right-4 bg-[#019c7d] text-white">{event.type}</Badge>
                     </div>
@@ -1023,7 +1023,7 @@ export default function HomePage() {
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                  <Button size="lg" className="bg-white text-[#019c7d] hover:bg-gray-100 px-8 py-3 font-semibold">
+                  <Button size="lg" className="bg-white text-[#019c7d] hover:bg-gray-100 px-8 py-3 font-semibold" onClick={() => window.open("https://www.linkedin.com/company/eage-iit-ism-dhanbad-student-chapter/posts/?feedView=all", "_blank", "noopener,noreferrer")}>
                     Register Now
                   </Button>
                 </motion.div>
@@ -1426,7 +1426,7 @@ export default function HomePage() {
                 <img
                   src="/assets/eage.jpg?height=40&width=120"
                   alt="ICMA Logo"
-                  className="h-10 w-auto filter brightness-0 invert mr-3"
+                  className="h-10 w-auto  mr-3 z-10 "
                 />
                 <div>
                   <div className="text-sm font-semibold">EAGE IIT (ISM) Dhanabd</div>
