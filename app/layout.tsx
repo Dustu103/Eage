@@ -7,6 +7,11 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "EAGE- IIT (ISM) Student Chapter",
+  icons: {
+    icon: "/assets/eage.jpg",
+    apple: "/assets/eage.jpg",
+    shortcut: "/assets/eage.jpg",
+  },
   description:
     "Empowering the next generation of local government leaders through education, networking, and professional development",
 }
